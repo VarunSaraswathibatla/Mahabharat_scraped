@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 from gtts import gTTS
 
 
-for i in range(2, 3): #change it to (2, 238) for complete version
+for i in range(2, 3): #change it to (2, 238) for complete version of mahabharath.
 
     number = str(i)
     x = (3-len(number))*'0' + number
@@ -31,5 +31,5 @@ for i in range(2, 3): #change it to (2, 238) for complete version
 
     language = 'hi'
     myobj = gTTS(text=speechText, lang=language, slow=False)
-    myobj.save(f"./Audiofiles/{i-1}_{title}.mp3")
+    myobj.save(f"./Audiofiles/{i-1}_{title}.mp3") 
 
